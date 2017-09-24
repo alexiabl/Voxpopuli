@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">  
+
+    <h:body>
+        <ui:composition template="/Plantillas/interno-modulo.xhtml">
+            <ui:define name="title">Módulo - #{userController.tituloPagina}</ui:define>
+            <ui:define name="formulario"> 
+                <h:form> 
+                    <p:growl id="gwlMensaje" showDetail="true" sticky="false" life="5000" />
+                    <div class="center">
+                        <div class="panelTitulo"><h1>#{userController.tituloPagina}</h1></div>
+
+                        <div class="panelDataTable" >
+                            <p:dataTable var="usuario" emptyMessage="No se encontraron datos" value="#{userController.listaUsuarios}"
+                                         paginatorPosition="bottom" rows="5" paginator="true"
+                                         paginatorTemplate="{CurrentPageReport} {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}"
+                                         rowsPerPageTemplate="5,10,15" currentPageReportTemplate="({currentPage} de {totalPages})">
+
+                                <p:column headerText="Nombre:">
+                                    <h:outputText value="#{usuario.firstName}" />
+                                </p:column>
+                                
+                                <p:column headerText="Apellido">
+                                    <h:outputText value="#{usuario.lastName}" />
+                                </p:column>
+
+                                <p:column headerText="Rol">
+                                    <h:outputText value="#{usuario.email}" />
+                                </p:column>
+
+                                <p:column headerText="Editar" style="width:60px; text-align:center;" >
+                                    <p:commandButton class="btnEditarRegistro" value="" >
+                                        <f:setPropertyActionListener target="" value="#{userController.setMostrarEditarUsuario(usuario)}" />
+                                    </p:commandButton>
+                                </p:column>
+                                
+                                <p:column headerText="Eliminar" style="width:60px; text-align:center;">
+                                        <p:commandButton class="btnEliminarRegistro" value="" >
+                                            <p:confirm header="Confirmación" message="Con el fin de mantener históricos, se recomienda no eliminar datos. ¿Está seguro de eliminar el usuario seleccionado?" icon="ui-icon-alert" />
+                                            <p:confirmDialog class="botonPopUp" global="true" showEffect="fade" hideEffect="fade">
+                                                <div class="botonPopUp">
+                                                    <p:commandButton value="Sí" type="button" styleClass="ui-confirmdialog-yes btnAceptar" icon="ui-icon-check" update="deleteMessage" />
+                                                    <p:commandButton value="No" type="button" styleClass="ui-confirmdialog-no btnCancelar" icon="ui-icon-close" />
+                                                </div>
+                                            </p:confirmDialog>
+                                            <f:setPropertyActionListener target="" value="#{userController.setMostrarFrmEliminarUsuario(usuario)}" />
+                                            <p:ajax event="dialogReturn" update="" />
+                                        </p:commandButton>
+                                    </p:column>
+                                
+                            </p:dataTable>
+
+                        </div>
+                    </div>
+
+                </h:form>
+
+            </ui:define>
+
+        </ui:composition>
+    </h:body>
+</html>
+

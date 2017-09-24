@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 23-sep-2017 15:00:10 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="Model.Users" table="USERS" catalog="VoxPopuli" optimistic-lock="version">
+        <id name="email" type="string">
+            <column name="Email" />
+            <generator class="assigned" />
+        </id>
+        <property name="firstName" type="string">
+            <column name="First_Name" length="60" not-null="true" />
+        </property>
+        <property name="lastName" type="string">
+            <column name="Last_Name" length="60" not-null="true" />
+        </property>
+        <property name="isAdmin" type="boolean">
+            <column name="Is_Admin" not-null="true" />
+        </property>
+        <property name="PWord" type="string">
+            <column name="P_Word" length="46" not-null="true" />
+        </property>
+        <property name="validPassword" type="boolean">
+            <column name="Valid_Password" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

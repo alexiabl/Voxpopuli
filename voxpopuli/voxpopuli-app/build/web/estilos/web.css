@@ -1,0 +1,1176 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    margin: auto;
+    background-image:url(../imagenes/bg_sides.png);
+}
+
+body.dialogo {
+    background-image:none
+}
+
+div.pagina {
+    width: 1200px;
+    margin: auto;
+}
+
+div.cintillo {
+    width: 1200px;
+    height: 88px;
+    background-color:#004a80;
+}
+
+div.cintillo .logo-ucr {
+    float: left;
+    width: 103px;
+    height: 58px;
+    margin: 15px 0 0 25px;
+}
+
+div.cintillo .logo-inie {
+    float: left;
+    width: 244px;
+    height: 58px;
+    margin: 15px 0;
+}
+
+div.encabezado {
+    float:left;
+    width:1200px;
+    height: 300px;
+    background:url(../imagenes/banner.png) #FFF center bottom no-repeat;
+    border-bottom: #004a80 solid 10px;
+}
+
+div.barra-horizontal {
+    float:left;
+    width:830px;
+    height:44px;
+    margin-left: 185px;
+    background:#01aedf;
+}
+
+div.barra-horizontal label {
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 15px;
+    color:#004a80;
+    margin:12px 0 0 25px;
+    display:inline-block;
+}
+
+div.menu-horizontal {
+    float:right;
+    width:410px;
+    height:44px;
+}
+
+button.item-menu-horizontal {
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 17px;
+    color:#FFF;
+    float:right;
+    width:135px;
+    height:44px;
+    text-align:center;
+    background:url(../imagenes/menu.png) !important;
+    border-left: #FFF 1px solid !important;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.item-menu-horizontal:hover {
+    font-weight: bold;
+    background:url(../imagenes/menu_hover.png) !important;
+}
+
+div.logo-sigepro {
+    float: left;
+    width: 500px;
+    margin: 20px 0 0 670px;
+    padding-left: 10px;
+}
+
+div.logo-sigepro p.titulo {
+    color: #004a80;
+    font-family: Franklin Gothic Medium, Franklin Gothic, ITC Franklin Gothic, Arial, sans-serif;
+    font-size: 40px;
+    margin-bottom: 35px;
+    line-height: 0%;
+    text-align: center;
+}
+
+div.logo-sigepro p.subtitulo {
+    color: #004a80;
+    font-family: Franklin Gothic Medium,Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif;
+    font-size: 21px;
+    line-height: 0%;
+    text-align:center;
+}
+
+div.contenido {
+    float:left;
+    width:1200px;
+    height:400px;
+    display: table;
+}
+
+div.contenido div.menu-vertical {
+    width: 250px;
+    background-color: #01aedf;
+    display: table-cell;
+    float: none;
+    vertical-align: top;
+}
+div.contenido div.formulario {
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 16px;
+    color:#5d5d5d;
+    width: 920px;
+    display: table-cell;
+    background-color: #FFF;
+    float: none;
+    padding: 20px;
+    vertical-align: top;
+}
+
+div.contenido-login {
+    float:left;
+    width:1200px;
+    height: 700px;
+    background:url(../imagenes/banner.png) #FFF center bottom no-repeat;
+}
+
+div.pie {
+    float:left;
+    width:1200px;
+    border-top: #004a80 solid 10px;
+    background: #FFF;
+}
+
+div.pie p {
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 12px;
+    text-align: center;
+    color:#5d5d5d;
+}
+
+div.logo-sigepro-login {
+    float:left;
+    width:350px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+div.logo-sigepro-login p.titulo {
+    color: #004a80;
+    font-family: Franklin Gothic Medium,Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif;
+    font-size: 68px;
+    margin-bottom: 55px;
+    line-height: 0%;
+    text-align:center;
+}
+
+div.logo-sigepro-login p.subtitulo {
+    color: #004a80;
+    font-family: Franklin Gothic Medium,Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif;
+    font-size: 31px;
+    line-height: 0%;
+    text-align:center;
+}
+
+div.bloque-login {
+    float: left;
+    width: 500px;
+    height: 250px;
+    margin: 65px 0 0 520px;
+    background: #01aedf;
+}
+
+table.formulario-login {
+    margin: 40px 0 0 50px;
+    text-align: center;
+}
+
+input.itFrmLogin {
+    width: 350px;
+    text-align: center;
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 14px;
+    color:#5d5d5d;
+    border-color: #004a80;
+}
+
+button.cbFrmLogin {
+    height: 32px;
+    background: url(../imagenes/login_button.png);
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 15px;
+    color: #FFF;
+    border: none;
+
+}
+
+button.cbFrmLogin:hover {
+    height: 32px;
+    background: url(../imagenes/login_button_hover.png);
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 15px;
+    color: #FFF;
+    border: none;
+
+}
+
+div.panelTitulo {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+
+div.panelTitulo h1 {
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 26px !important;
+    color: #004a80;
+}
+
+.panelBotonIncluir 
+{
+    width: 100%;
+    float: left;
+    margin: 5px 0 25px 0;
+}
+
+.panelDataTable
+{
+    width: 100%;
+    float: left;
+    margin: 5px 0 25px 0;
+}
+
+button {
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 15px !important;
+    background: url(../imagenes/buttons.png) !important;
+    border: none !important;
+}
+
+button:hover {
+    background: url(../imagenes/buttons_hover.png) !important;
+    color: #FFF;
+}
+
+button.btnConsultarRegistro {
+    width: 38px;
+    height: 38px;
+    background: url(../imagenes/search.png) no-repeat !important;
+    border-radius: 30px;
+
+}
+
+button.btnConsultarRegistro:hover {
+    width: 38px;
+    height: 38px;
+    background: url(../imagenes/search_hover.png) no-repeat !important;
+    border: none !important;
+    border-radius: 30px;
+
+}
+
+button.btnEditarRegistro {
+    width: 38px;
+    height: 38px;
+    background: url(../imagenes/edit.png) no-repeat !important;
+    border: none !important;
+    border-radius: 30px;
+
+}
+
+
+.ui-button {
+    width: auto;
+    height: 40px;
+}
+
+.menuprincipaldisplay{
+    background: url(../imagenes/menu_section.png) !important;
+}
+
+button.btnEditarRegistro:hover {
+    width: 38px;
+    height: 38px;
+    background: url(../imagenes/edit_hover.png) no-repeat !important;
+    border: none !important;
+    border-radius: 30px;
+
+}
+
+button.btnEliminarRegistro {
+    width: 38px;
+    height: 38px;
+    background: url(../imagenes/delete.png) no-repeat !important;
+    border: none !important;
+    border-radius: 30px;
+
+}
+
+button.btnEliminarRegistro:hover {
+    width: 38px;
+    height: 38px;
+    background: url(../imagenes/delete_hover.png) no-repeat !important;
+    border: none !important;
+    border-radius: 30px;
+}
+
+button.btnDocumentosAdjuntos {
+    width: 38px;
+    height: 38px;
+    background: url(../imagenes/attached.png) no-repeat !important;
+    border: none !important;
+    border-radius: 30px;
+
+}
+
+button.btnDocumentosAdjuntos:hover {
+    width: 38px;
+    height: 38px;
+    background: url(../imagenes/attached_hover.png) no-repeat !important;
+    border: none !important;
+    border-radius: 30px;
+
+}
+
+button.btnDescargar {
+    width: 38px;
+    height: 38px;
+    background: url(../imagenes/download.png) no-repeat !important;
+    border: none !important;
+    border-radius: 30px;
+
+}
+
+button.btnDescargar:hover {
+    width: 38px;
+    height: 38px;
+    background: url(../imagenes/download_hover.png) no-repeat !important;
+    border: none !important;
+    border-radius: 30px;
+
+}
+
+.panelBotonesAceptarCancelar
+{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    float: left;
+    text-align:center;
+    font-weight:bold;
+}
+
+button.btnAceptar {
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 15px !important;
+    background: url(../imagenes/buttons.png) !important;
+    border: none !important;
+    border-radius: 0;
+    margin: 5px;
+}
+
+button.btnAceptar:hover {
+    background: url(../imagenes/buttons_hover.png) !important;
+    color: #FFF;
+}
+
+button.btnCancelar {
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 15px !important;
+    background: url(../imagenes/cancel.png) !important;
+    border: none !important;
+    border-radius: 0;
+    margin: 5px;
+}
+
+button.btnCancelar:hover {
+    background: url(../imagenes/cancel_hover.png) !important;
+    color: #FFF;
+}
+
+label.ui-widget {
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 14px;
+    color: #5d5d5d;
+}
+
+input.ui-widget {
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 15px;
+    color:#5d5d5d !important;
+    border-color: #004a80 !important;
+    border-radius: 0;
+}
+textarea.ui-widget {
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 15px;
+    color:#5d5d5d !important;
+    border-color: #004a80 !important;
+    border-radius: 0;
+}
+
+div.ui-selectonemenu {
+    border-color: #004a80 !important;
+    background: none;
+}
+
+label.ui-selectonemenu-label {
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 15px;
+    color: #5d5d5d !important;
+}
+
+li.ui-selectonemenu-item {
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 13px;
+    color: #5d5d5d !important;
+}
+
+div.ui-selectonemenu-trigger {
+    background: #004a80 !important;
+    border-radius: 0;
+    border-color: #004a80 !important;
+}
+
+div.ui-selectonemenu-trigger.ui-state-hover .ui-icon {
+    background-image: url("/Sistema_Inventario/javax.faces.resource/images/ui-icons_e0fdff_256x240.png.do?ln=primefaces-start");
+}
+
+span.ui-messages-error-summary {
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 12px;
+}
+
+span.ui-message-error-detail {
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 12px;
+}
+
+
+
+.ui-inputfield, .ui-widget-content .ui-inputfield, .ui-widget-header .ui-inputfield {
+    box-shadow: none;
+}
+
+.ui-corner-all {
+    border-radius: 0;
+}
+
+.ui-growl-item-container {
+    background: #dceec6 50% 50%;
+    border:none;
+}
+
+.ui-growl-item {
+    color:#5d5d5d;
+}
+
+.ui-growl-message {
+    text-align: center;
+}
+
+.ui-growl-message .ui-growl-title {
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-shadow: 0px 0px 0px #333333 !important;
+}
+
+.ui-growl-message p {
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 13px;
+    text-shadow: 0px 0px 0px #333333 !important;
+
+}
+
+.ui-dialog-title {
+    text-align: center;
+    margin-left: 92px !important;
+    margin-top: 11px !important;
+    font-size: 22px;
+    margin-bottom: 10px !important;
+}
+
+.ui-widget-content {
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 14px;
+    color: #5d5d5d;
+}
+
+.ui-widget-header {
+    background: none;
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color:#004a80;
+}
+
+h3.ui-widget {
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 15px !important;
+}
+
+ul.ui-menu-list .ui-menuitem-link {
+    background: url(../imagenes/submenu.png);
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 15px !important;
+    height: 44px;
+    width:100%;
+}
+
+.ui-menu-list {
+    overflow:hidden;
+}
+
+.ui-menuitem {
+    margin: 0 !important;
+}
+
+.ui-menuitem-link {
+    padding: 10px 0 0 15px !important;
+}
+
+.ui-widget-content a {
+    color:#004a80 !important;
+}
+
+ul.ui-menu-list .ui-menuitem-link.ui-state-hover {
+    background: url(../imagenes/submenu_hover.png);
+    font-size: 15px !important;
+    height: 44px;
+}
+
+.ui-panelmenu .ui-panelmenu-content {
+    padding: 0;
+}
+
+.ui-corner-top {
+    border-radius: 0;
+}
+
+#formMenuPrincipal h3 a:hover {
+    font-weight: bold;
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.7);
+}
+#formMenuPrincipal h3 a{
+    font-weight: bold;
+    color: #4f4f4f;
+    text-align: center;
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.7);
+}
+
+.ui-panelmenu .ui-icon{
+    display: none;
+}
+
+#formMenuPrincipal .ui-panelmenu-header.ui-state-default {
+    background: url(../imagenes/buttons.png);
+    height: 40px;
+    border:none;
+    font-weight: bold;
+    color: #4f4f4f;
+    text-shadow: 0px 1px 0px rgba(255,255,255,0.7);
+
+}
+
+#formMenuPrincipal .ui-panelmenu-header.ui-state-hover {
+    background: url(../imagenes/buttons_hover.png);
+    height: 40px;
+    color: #FFF;
+    border:none;
+}
+
+#formMenuPrincipal .ui-panelmenu-header.ui-state-active {
+    background: url(../imagenes/buttons.png);
+    height: 40px;
+    border:none;
+}
+
+#formMenuPrincipal a {
+    height: 33px !important;
+}
+
+#formMenuPrincipal .ui-widget-header {
+    height: 44px;
+    background: url(../imagenes/menu_section.png);
+    border: none;
+    margin: 0;
+    width: 100%;
+}
+
+#formMenuPrincipal .ui-widget-header h3 {
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 18px;
+    padding: 7px 16px;
+}
+
+#formMenuPrincipal .ui-menu {
+    padding: 0;
+}
+
+#formMenuPrincipal .ui-button {
+    width: 100%;
+    height: 40px;
+}
+
+.ui-datatable .ui-state-default, .ui-datatable .ui-widget-content .ui-state-default, .ui-datatable .ui-widget-header .ui-state-default {
+    background: #004a80;
+}
+
+.ui-datatable thead th {
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border-top: none !important;
+    border-left: none !important;
+    border-bottom: none !important;
+    border-right: 5px solid #FFF !important;
+    vertical-align: top;
+}
+
+.ui-datatable thead th span {
+    color: #f2eeee  !important;
+    text-shadow: 0px 0px 0px rgba(255,255,255,0.7) !important;
+    font-weight: 600 !important;
+}
+
+.ui-datatable thead th:last-child {
+    border-right: none !important;
+}
+
+.ui-datatable thead th input {
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 9px;
+    background: #FFF !important;
+}
+
+.ui-datatable tbody td, .ui-datatable tfoot td {
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 14px;
+    border: none !important;
+    text-align: center;
+}
+
+.ui-datatable  .ui-widget-content {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 5px solid #004a80;
+}
+
+.ui-datatable .ui-widget-header {
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 14px;
+    border: none;
+}
+
+label.ui-widget {
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 14px;
+}
+
+.ui-growl-image {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../imagenes/messages.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.ui-messages-info-icon, .ui-messages-warn-icon, .ui-messages-error-icon, .ui-messages-fatal-icon, .ui-message-info-icon, .ui-message-warn-icon, .ui-message-error-icon, .ui-message-fatal-icon {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../imagenes/messages.png");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.ui-growl .ui-icon-closethick {
+    background: url("../imagenes/cerrar_growl.png");
+}
+
+
+.ui-dialog .ui-icon-closethick, .ui-message-dialog .ui-icon-closethick {
+    background: url("../imagenes/cerrar_pop_up.png");
+}
+
+.ui-dialog .ui-state-hover .ui-icon-closethick, .ui-message-dialog .ui-state-hover .ui-icon-closethick {
+    background: url("../imagenes/cerrar_pop_up_hover.png");
+}
+
+.ui-dialog .ui-state-hover, .ui-message-dialog ui-state-hover {
+    border: none;
+    background: none;
+}
+
+.ui-column-filter {
+    margin-top: 10px !important;
+    margin-bottom: 5px !important;
+}
+
+.ui-paginator {
+    padding: 10px 0 10px 0 !important;
+}
+
+.ui-selectonemenu-panel .ui-selectonemenu-list {
+    padding: 0;
+}
+
+.ui-selectonemenu-panel .ui-state-highlight {
+    background: #01aedf;
+    color: #FFF;
+}
+
+.ui-selectonemenu-panel .ui-state-hover {
+    background: none;
+    color: #01aedf;
+}
+
+.ui-datatable .ui-state-highlight {
+    background: #01aedf;
+    color: #FFF;
+}
+
+.ui-datatable .ui-state-hover {
+    background: none;
+    color: #01aedf;
+}
+
+.ui-datepicker .ui-datepicker-header {
+    font-size: 20px;
+    border:none;
+}
+
+.ui-datepicker .ui-datepicker-header .ui-datepicker-prev {
+    border:none;
+}
+
+.ui-datepicker .ui-datepicker-header .ui-datepicker-next {
+    border:none;
+}
+
+.ui-datepicker-calendar  .ui-state-default {
+    background: none;
+    border: none;
+    color: #01aedf !important;
+    text-align:center;
+}
+
+.ui-datepicker-calendar  .ui-state-hover {
+    background: none;
+    border: none;
+    color: #01aedf;
+    font-weight:bold;
+    text-align:center;
+}
+
+.ui-datepicker-calendar  .ui-state-active {
+    background: none;
+    border: none;
+    color: #004a80 !important;
+    font-weight:bold;
+    text-align:center;
+}
+
+.ui-timepicker-div .ui-slider-handle {
+    width: 10px;
+    height: 10px;
+    border-radius: 180px;
+    background: #01aedf;
+    top: 0;
+    right: 0;
+}
+
+.ui-timepicker-div .ui-slider-horizontal {
+    margin: 0;
+    border-radius: 180px;
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    margin-left: -5px;
+}
+
+.ui-autocomplete .ui-widget {
+    border-color: #004a80;
+    font-size: 15px;
+}
+
+.ui-autocomplete-items .ui-state-highlight {
+    border-color: #01aedf;
+    background: #01aedf;
+    color: #FFF;
+}
+
+.ui-fileupload-simple {
+    display:table;
+    position:relative;
+}
+
+.ui-fileupload-simple .ui-button-text, .ui-fileupload-simple .ui-fileupload-filename {
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 15px;
+    float:left;
+
+}
+
+.ui-fileupload-simple .ui-button {
+    margin: 5px 5px 5px 0;
+}
+
+.ui-fileupload-simple .ui-fileupload-filename {
+    width:100%;
+    margin: 5px 5px 0 0;
+    color: #5d5d5d;
+}
+
+.ui-panelmenu-header span.ui-icon {
+    position: relative !important;
+    float: right;
+    left: -5px !important;
+    top: 45% !important;
+}
+
+.ui-panelmenu-header.ui-state-active span.ui-icon {
+    background-image: url("/Sistema_Inventario/javax.faces.resource/images/ui-icons_e0fdff_256x240.png.do?ln=primefaces-start") !important;
+}
+
+.ui-panelmenu-header a {
+    padding: 12px 0 0 0px !important;
+}
+
+div.bloque-bienvenida {
+    margin-top: 8px;
+}
+
+div.bloque-titulo-restringido {
+    float: left;
+    width: 100%;
+    text-align: left;
+}
+
+div.bloque-titulo-restringido  h1 {
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 26px;
+    color: #004a80;
+}
+
+div.bloque-restringido {
+    margin-top: 8px;
+}
+
+.ui-paginator {
+    font-size: 16px;
+}
+
+.ui-paginator .ui-paginator-page {
+    color: #004a80;
+    background: #FFF !important;
+    border: none;
+    font-weight: bold;
+}
+
+.ui-paginator .ui-paginator-page.ui-state-active {
+    color: #01aedf;
+    background: #FFF !important;
+    border: none;
+    font-weight: bold;
+}
+
+.ui-paginator .ui-paginator-rpp-options {
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    border-color: #004a80;
+    color: #004a80;
+    background: #FFF !important;
+    font-weight: bold;
+}
+
+.ui-paginator .ui-paginator-first {
+    background-color: #FFF !important;
+    border: none;
+    padding: 0;
+    margin: 0 10px 0 0;
+}
+
+.ui-paginator .ui-paginator-first .ui-icon {
+    background-image: url(../imagenes/first_page.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 29px;
+}
+
+.ui-paginator .ui-paginator-prev {
+    background-color: #FFF !important;
+    border: none;
+    padding: 0;
+    margin: 0 10px 0 10px;
+}
+
+.ui-paginator .ui-paginator-prev .ui-icon {
+    background-image: url(../imagenes/prev_page.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ui-paginator .ui-paginator-next {
+    background-color: #FFF !important;
+    border: none;
+    padding: 0;
+    margin: 0 10px 0 10px;
+}
+
+.ui-paginator .ui-paginator-next .ui-icon {
+    background-image: url(../imagenes/next_page.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ui-paginator .ui-paginator-last {
+    background-color: #FFF !important;
+    border: none;
+    padding: 0;
+    margin: 0 0 0 10px;
+}
+
+.ui-paginator .ui-paginator-last .ui-icon {
+    background-image: url(../imagenes/last_page.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 29px;
+}
+
+fieldset.ui-widget-content {
+    border: 1px solid #004a80;
+}
+
+fieldset.ui-widget-content .ui-fieldset-legend {
+    font-weight: bold;
+    border: 1px solid #004a80;
+    background: #004a80;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 5px 15px;
+    width: 100%;
+}
+
+.ui-picklist-source-controls,
+.ui-picklist-target-controls {
+    display: none !important;
+}
+
+.ui-picklist-list-wrapper {
+    width: 45% !important;
+}
+
+.ui-picklist-button-move-top, 
+.ui-picklist-button-move-bottom, 
+.ui-picklist-button-move-up, 
+.ui-picklist-button-move-down {
+    display: none !important;
+}
+
+.ui-corner-tr {
+    border-top-right-radius: 0;
+}
+
+.ui-corner-tl {
+    border-top-left-radius: 0;
+}
+
+.ui-corner-bottom {
+    border-radius: 0;
+}
+
+.ui-picklist-caption {
+    border-color: #004a80;
+    font-size: 16px;
+    color: #FFF;
+    background: #004a80;
+}
+
+.ui-picklist-list {
+    border-color: #004a80;
+}
+
+.ui-picklist-item {
+    margin: 0 !important;
+}
+
+.ui-picklist-item.ui-state-hover {
+    color: #01aedf;
+    background: none;
+}
+
+.ui-picklist-item.ui-state-highlight {
+    color: #FFF;
+    background: #01aedf;
+    border-top: solid 1px #004a80;
+    border-bottom: solid 1px #004a80;
+}
+
+.ui-picklist-item table td:first-child {
+    width: 25px;
+}
+
+.ui-picklist-item .ui-chkbox-box {
+    border-color: #004a80;
+    background: #FFF;
+}
+
+.ui-picklist-item .ui-chkbox-box.ui-state-hover {
+    border-color: #01aedf;
+    background: #FFF;
+}
+
+.ui-picklist-item .ui-chkbox-box.ui-state-active .ui-icon {
+    background-image: url("/Sistema_Inventario/javax.faces.resource/images/ui-icons_38667f_256x240.png.do?ln=primefaces-aristo");
+}
+
+div.inicioSesion{
+    float: left;
+    text-align: left;
+    margin-left: 37%;
+    margin-top: 18px;
+}
+
+.agregarTupla{
+    margin-bottom: 2%;
+    float: left;
+    margin-top: 3%;
+}
+
+.botonPopUp{
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-left: 12px;
+}
+
+
+.ui-widget-content.ui-picklist-list.ui-picklist-source.ui-corner-bottom.ui-sortable{
+    width:99.5% !important;
+}
+
+.ui-widget-content.ui-picklist-list.ui-picklist-target.ui-corner-bottom.ui-sortable{
+    width:99.5% !important;
+}
+.ui-picklist.ui-widget{
+    width:100% !important;
+}
+
+.ui-picklist.ui-widget td{
+    width: 45% !important;
+}
+
+.ui-picklist.ui-widget td:nth-child(3){
+    width:20px !important;
+}
+
+
+.ui-picklist-filter.ui-inputfield.ui-inputtext.ui-widget.ui-state-default.ui-corner-all{
+    width: 94.6% !important;
+}
+
+.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-icon-only.ui-picklist-button-add{
+    display: block !important;
+    margin-bottom: 0.3em !important;
+    width: 90px !important;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-icon-only.ui-picklist-button-remove{
+    display: block !important;
+    margin-bottom: 0.3em !important;
+    width: 90px !important;
+    margin-right: 0px !important;
+    margin-left: 0px !important; 
+}
+
+.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-icon-only.ui-picklist-button-add-all{
+    display: block !important;
+    margin-bottom: 0.3em !important;
+    width: 90px !important;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-icon-only.ui-picklist-button-remove-all{
+    display: block !important; 
+    margin-bottom: 0.3em !important;
+    width: 90px !important;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.ui-picklist-caption.ui-widget-header.ui-corner-tl.ui-corner-tr{
+    width:94.3% !important;
+}
+
+div.panelTituloAgregarBienesAdquisicion {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif;
+    font-size: 12px;
+    color: #004a80;
+}
+
+.cargando{
+    float:left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width:50px;
+    height:50px;
+}
+
+.ui-state-default .ui-icon {
+    background-image: url("/Sistema_Inventario/javax.faces.resource/images/ui-icons_ffffff_256x240.png.do?ln=primefaces-aristo");
+}
+
+.ui-selectonemenu.ui-widget.ui-state-default.ui-corner-all.ui-state-hover span{
+    background-image: url("/Sistema_Inventario/javax.faces.resource/images/ui-icons_ffffff_256x240.png.do?ln=primefaces-aristo");
+}
+
+.formulario-login  table{
+    width: 100%;
+    margin-top: 10%;
+}
+
+.formulario-login input{
+    width:84%;
+    margin-left: 7%;
+    text-align: center;
+}
+
+.formulario-login .ui-state-default{
+    box-shadow: inset 0px 0px 0px #fff !important;
+}
+
+.gif{
+    margin-top: 5px;
+}
+
+.ui-fieldset-legend.ui-corner-all.ui-state-default{
+    color: #ffffff !important;
+    text-shadow: 0px 0px 0px rgba(255,255,255,255) !important;
+}
+
+.tablaMantenimiento{
+    margin-left:30%;
+}
+
+.ui-confirm-dialog-message {
+    display: inline-block;
+    float: left;
+}
+
+
