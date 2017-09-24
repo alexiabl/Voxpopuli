@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:body>
+        <ui:composition template="/Plantillas/login.xhtml">
+            <ui:define name="title">Bienvenido - Sistema de Inventario</ui:define>
+            <ui:define name="formulario">
+
+                <div class="formulario-login">
+                    <h:form > 
+                        <p:growl id="gwlMensaje" showDetail="true" sticky="false" life="5000" />
+                        <h:panelGrid columns="1" cellpadding="5"> 
+                            <p:inputText id="usuario" label="Correo Electrónico" value="#{userController.email}"/>
+                            <p:password id="contraseNa" label="Keyword" value="#{userController.PWord}" />
+                        </h:panelGrid>
+
+                        <p:watermark for="usuario" value="Correo Electrónico" id="waterMarkUsuario"/>
+                        <p:watermark for="contraseNa" value="Contraseña" id="waterMarkContrasena"/>
+
+                        <div>
+                            <h:panelGroup id="panelBotonAceptarCancelar" class="panelBotonesAceptarCancelar">
+                                <p:commandButton id="cbAceptar" value="Ingresar" styleClass="botonAceptar"  onclick="PrimeFaces.monitorDownload(start, stop);"  action="#{userController.mostrarInicio()}" update="@form" />
+                                <p:commandButton id="cbAceptar2" value="Olvidé Contraseña" styleClass="botonAceptar"  onclick="PrimeFaces.monitorDownload(start, stop);"  action="#{userController.olvidarContraseña()}" update="@form" />
+                                <p:commandButton id="cbAceptar3" value="Nueva Cuenta" styleClass="botonAceptar"  onclick="PrimeFaces.monitorDownload(start, stop);"  action="#{userController.mostrarFrmInsertarUsuario()}" update="@form" />
+                                </h:panelGroup>
+                        </div>
+                    </h:form>
+                </div>
+
+            </ui:define>
+        </ui:composition>
+    </h:body>
+</html>
+
+

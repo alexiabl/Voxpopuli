@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+    <h:head>
+        <title><ui:insert name="title">Sistema de Inventario</ui:insert></title>
+        <link rel="stylesheet" href="/VoxPopuli/estilos/web.css" type="text/css" media="screen" />
+    </h:head>
+
+    <h:body>
+        <div class="pagina">
+            <div class="cintillo"> 
+                <a href="http://www.ucr.ac.cr" target="_blank">
+                    <img src="/VoxPopuli/imagenes/logo-ucr.png" class="logo-ucr" alt="" />
+                </a>
+                <a href="http://www.inie.ucr.ac.cr" target="_blank">
+                    <img src="/VoxPopuli/imagenes/logo-inie.png" class="logo-inie" alt=""/>
+                </a>
+            </div>
+            <div class="encabezado">
+                <div class="barra-horizontal">
+                    <ui:include src="/Plantillas/horizontal-menu.xhtml" />
+                </div>
+                <div class="logo-sigepro" >
+                    <p class="titulo"> Sistema de Inventario </p>
+                    <p class="subtitulo">Seguimiento de los Bienes Institucionales</p>
+                </div>
+            </div>
+            <div class="contenido">
+                <div class="menu-vertical">
+                    <ui:include src="/Plantillas/principal-menu.xhtml" />
+                </div>
+                <div class="formulario">
+                    <div class="contenedor">
+                        <ui:insert name="formulario">
+                            Contenido por defecto
+                        </ui:insert>
+                    </div>
+                </div>
+            </div>
+            <div class="pie">
+                <p>© Todos los derechos reservados Universidad de Costa Rica 2017</p>
+            </div>
+        </div>
+
+    </h:body>
+</html>

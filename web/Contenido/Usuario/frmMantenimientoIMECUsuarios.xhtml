@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">  
+
+    <h:body>
+        <ui:composition template="/Plantillas/interno-modulo.xhtml">
+            <ui:define name="title">Módulo -</ui:define>
+            <ui:define name="formulario"> 
+                <h:form> 
+                    <p:growl id="gwlMensajes" showDetail="true" sticky="false" life="5000" />
+                    <div class="center">
+                        <div class="panelTitulo"><h1>#{userController.tituloPagina}</h1></div>                      
+                        <div class="FrmAgregarDatos">                              
+                            <h:form>
+                                <p:growl id="gwlMensaje" showDetail="true" />
+                                <p:fieldset legend="Información del Usuario" style="margin-bottom:20px">
+                                    <h:panelGrid style="margin-left: 30%;" columns="2" cellpadding="0" cellspacing="10" class="tablaMantenimiento"   columnClasses="columnaMantenimiento"> 
+                                        <p:outputLabel value="Nombre:" />
+                                        <p:inputText value="#{userController.firstName}" />
+                                        <p:outputLabel value="Apellido:" />
+                                        <p:inputText value="#{userController.lastName}" />
+                                        <p:outputLabel value="Correo electrónico" />
+                                        <p:inputText value="#{userController.email}" />
+                                        <p:password rendered="#{userController.accion eq 'USER_INSERT'}" id="contraseNa" label="Keyword" value="#{userController.PWord}" />
+                                        </h:panelGrid>
+                                </p:fieldset>
+                                <div class="panelBotonesAceptarCancelar">
+                                    <h:panelGroup>
+                                        <p:commandButton styleClass="btnAceptar" value="Aceptar" update="gwlMensaje" onclick="PrimeFaces.monitorDownload(start, stop);"  rendered="#{userController.accion eq 'USER_INSERT'}" action="#{userController.insertarUsuario()}"/>
+                                        <p:commandButton styleClass="btnAceptar" value="Aceptar" update="gwlMensaje" onclick="PrimeFaces.monitorDownload(start, stop);"  rendered="#{userController.accion eq 'USER_EDIT'}" action="#{userController.editarNombreUsuario()}"/>
+                                        <p:commandButton styleClass="btnCancelar" value="Regresar"  onclick="PrimeFaces.monitorDownload(start, stop);" action="#{userController.mostrarFrmUsuarios()}"/>
+                                    </h:panelGroup>
+                                </div>
+
+                            </h:form>
+                        </div>
+
+                    </div>
+
+                </h:form>
+
+            </ui:define>
+
+        </ui:composition>
+    </h:body>
+</html>
